@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "geocrm": {
+      "type": "http",
+      "url": "https://geotech-crm.web.app/api/mcp"
+    }
+  }
+}

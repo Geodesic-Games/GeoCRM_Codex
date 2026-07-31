@@ -1,0 +1,36 @@
+{
+  "name": "geocrm",
+  "version": "0.2.0",
+  "description": "Use GeoTech ONE GeoCRM boards from Codex with per-user OAuth and live board permissions.",
+  "author": {
+    "name": "GeoTech",
+    "email": "denys.dubinin@geotech.one",
+    "url": "https://geotech.one"
+  },
+  "homepage": "https://geotech-crm.web.app/docs/codex-plugin/",
+  "repository": "https://github.com/Geodesic-Games/GeoCRM_Codex",
+  "license": "UNLICENSED",
+  "keywords": ["crm", "boards", "sales", "oauth", "mcp"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GeoTech ONE CRM",
+    "shortDescription": "Work with your permitted GeoCRM boards.",
+    "longDescription": "Connect Codex to GeoTech ONE GeoCRM using your Google account. GeoCRM applies live view-only or edit access for every board and every tool call.",
+    "developerName": "GeoTech",
+    "category": "Sales",
+    "capabilities": ["OAuth", "Read", "Write"],
+    "websiteURL": "https://crm.geotech.one/",
+    "privacyPolicyURL": "https://crm.geotech.one/privacy",
+    "termsOfServiceURL": "https://crm.geotech.one/terms",
+    "defaultPrompt": [
+      "List the GeoCRM boards I can access.",
+      "Find recent contacts matching a company name.",
+      "Create a CRM item after confirming the board and fields."
+    ],
+    "brandColor": "#287DFF",
+    "composerIcon": "./assets/geotech-one.png",
+    "logo": "./assets/geotech-one.png",
+    "logoDark": "./assets/geotech-one.png"
+  },
+  "mcpServers": "./.mcp.json"
+}

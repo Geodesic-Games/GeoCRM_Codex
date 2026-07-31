@@ -1,0 +1,20 @@
+{
+  "name": "geotech-one",
+  "interface": {
+    "displayName": "GeoTech ONE"
+  },
+  "plugins": [
+    {
+      "name": "geocrm",
+      "source": {
+        "source": "local",
+        "path": "./plugins/geocrm"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Sales"
+    }
+  ]
+}
