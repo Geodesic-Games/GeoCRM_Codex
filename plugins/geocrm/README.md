@@ -27,27 +27,22 @@ Use this for the branded Plugins-directory card, starter prompts, and the bundle
 
 #### Install with the Codex desktop interface
 
-GeoTech ONE is distributed from a public Git marketplace, so register that marketplace once:
+No terminal command is required. Register and install the public Git marketplace directly in Codex desktop:
+
+1. Open **Plugins**.
+2. Open **Create → Add plugin marketplace** in the upper-right corner.
+3. Enter Source `Geodesic-Games/GeoCRM_Codex`.
+4. Enter Git ref `main`.
+5. Leave Sparse paths empty. This ensures Codex receives both the marketplace catalog and plugin folder.
+6. Select **Add marketplace**.
+7. If necessary, select refresh, then open **Personal → GeoTech ONE**.
+8. Open **GeoTech ONE CRM** and select the plus or **Install** button.
+9. Confirm its blue icon appears in the **Installed** row and start a new Codex task.
+
+#### Optional CLI alternative
 
 ```powershell
-codex plugin marketplace add Geodesic-Games/GeoCRM_Codex
-```
-
-Then complete the installation in Codex desktop:
-
-1. Open **Plugins** and select the refresh icon in the upper-right corner.
-2. Open **Personal**, then select the **GeoTech ONE** marketplace source.
-3. Search for **GeoTech ONE CRM** and open its details.
-4. Select the plus or **Install** button.
-5. Confirm the blue GeoTech ONE icon appears in the **Installed** row.
-6. Start a new Codex task so the plugin skill and MCP tools load.
-
-If the marketplace does not appear, run `codex plugin marketplace list`, confirm `geotech-one` is present, and refresh the Plugins page again.
-
-#### Install entirely from the CLI
-
-```powershell
-codex plugin marketplace add Geodesic-Games/GeoCRM_Codex
+codex plugin marketplace add Geodesic-Games/GeoCRM_Codex --ref main
 codex plugin add geocrm@geotech-one
 codex plugin list
 ```
@@ -59,12 +54,11 @@ The three commands above are the supported sequence: register the Git marketplac
 An owner or administrator should:
 
 1. Open [GeoCRM](https://crm.geotech.one/) and choose **Admin menu**.
-2. Under **Permission groups**, enter a group name.
-3. Choose **View only** or **Can edit**.
-4. Select the boards included in the group and create it.
-5. Under **Accounts**, assign the group to each person who should receive that access.
+2. Open the person's account and select the **CRM workspace** access type.
+3. Assign an existing permission group, or select individual boards and BackOffice sections directly.
+4. Choose **View only** or **Can edit** for every direct assignment.
 
-If a person belongs to overlapping groups, edit access wins for boards included by both. A direct board assignment also grants edit access. Existing permission groups created before viewer/editor access remain edit-capable for compatibility.
+If a person receives overlapping grants, edit access wins for boards included by both. Existing direct assignments without an explicit level remain edit-capable for compatibility; new direct assignments default to view-only.
 
 ## Sign in and use it
 
