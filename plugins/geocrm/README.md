@@ -37,7 +37,8 @@ No terminal command is required. Register and install the public Git marketplace
 6. Select **Add marketplace**.
 7. If necessary, select refresh, then open **Personal → GeoTech ONE**.
 8. Open **GeoTech ONE CRM** and select the plus or **Install** button.
-9. Confirm its blue icon appears in the **Installed** row and start a new Codex task.
+9. Complete the GeoCRM sign-in window, using the Google account registered in GeoCRM.
+10. Confirm its blue icon appears in the **Installed** row, restart Codex desktop, and start a new task.
 
 #### Optional CLI alternative
 
@@ -47,7 +48,7 @@ codex plugin add geocrm@geotech-one
 codex plugin list
 ```
 
-The three commands above are the supported sequence: register the Git marketplace, install `geocrm` from the `geotech-one` marketplace, then verify the installation. Start a new Codex task after either installation method.
+The three commands above are the supported sequence: register the Git marketplace, install `geocrm` from the `geotech-one` marketplace, then verify the installation. Complete the browser sign-in, restart Codex desktop, and start a new task after either installation method.
 
 ## Prepare GeoCRM access
 
@@ -66,7 +67,7 @@ Ask Codex:
 
 > List the GeoCRM boards I can access.
 
-On first use, Codex opens the GeoCRM authorization page. Sign in with the Google account registered in GeoCRM, review the requested scopes, and choose **Authorize GeoCRM**.
+Codex opens the GeoCRM authorization page during installation. Sign in with the Google account registered in GeoCRM, review the requested scopes, and choose **Authorize GeoCRM**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the GeoCRM account disabled.
 
 GeoCRM checks the user's current account status and board grants on every MCP request. Removing a group, changing it to view-only, removing a board, or disabling the user takes effect without issuing a new plugin credential.
 
@@ -112,7 +113,7 @@ Removing the local connection does not change GeoCRM user access. A GeoCRM admin
 
 ## Security notes
 
-- OAuth uses authorization code flow with PKCE, short-lived access tokens, and rotating refresh tokens.
+- OAuth uses authorization code flow with PKCE, short-lived access tokens, and persistent rotating refresh tokens.
 - The plugin never receives a Google password or a reusable Firebase credential.
 - GeoCRM enforces the signed-in person's live board viewer/editor grants on every tool call.
 - The local stdio MCP remains available only in the private GeoCRM application repository for specialized developer/API-key workflows.

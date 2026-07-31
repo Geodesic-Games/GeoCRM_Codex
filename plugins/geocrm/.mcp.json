@@ -2,7 +2,8 @@
   "mcpServers": {
     "geocrm": {
       "type": "http",
-      "url": "https://geotech-crm.web.app/api/mcp"
+      "url": "https://geotech-crm.web.app/api/mcp",
+      "oauth_resource": "https://geotech-crm.web.app/api/mcp"
     }
   }
 }

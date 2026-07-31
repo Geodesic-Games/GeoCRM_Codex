@@ -1,6 +1,6 @@
 {
   "name": "geocrm",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Use GeoTech ONE GeoCRM boards from Codex with per-user OAuth and live board permissions.",
   "author": {
     "name": "GeoTech",

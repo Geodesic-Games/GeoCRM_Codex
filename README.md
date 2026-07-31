@@ -12,7 +12,8 @@ No terminal command or repository clone is required:
 4. Enter Git ref `main`.
 5. Leave Sparse paths empty and select **Add marketplace**.
 6. Open **Personal → GeoTech ONE** and install **GeoTech ONE CRM**.
-7. Start a new Codex task.
+7. Complete the GeoCRM sign-in window that opens during installation.
+8. Restart Codex desktop and start a new task.
 
 Optional CLI equivalent:
 
@@ -22,7 +23,7 @@ codex plugin add geocrm@geotech-one
 codex plugin list
 ```
 
-Start a new Codex task after installation. On first use, GeoCRM opens its OAuth page so each person can sign in with their own authorized Google account.
+Installation opens GeoCRM's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or GeoCRM disables the account.
 
 For a direct MCP connection without the plugin card or local files:
 
