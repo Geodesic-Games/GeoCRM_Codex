@@ -4,14 +4,22 @@ This public repository distributes the GeoCRM Codex plugin. The CRM server, data
 
 ## Install without cloning
 
-Add the public marketplace and install the plugin:
+Add the public marketplace and install the plugin from the CLI:
 
 ```powershell
 codex plugin marketplace add Geodesic-Games/GeoCRM_Codex
 codex plugin add geocrm@geotech-one
+codex plugin list
 ```
 
 Start a new Codex task after installation. On first use, GeoCRM opens its OAuth page so each person can sign in with their own authorized Google account.
+
+To finish through the Codex desktop interface after registering the marketplace with the first command:
+
+1. Open **Plugins** in Codex desktop and select the refresh icon.
+2. Open **Personal**, then select the **GeoTech ONE** marketplace source.
+3. Search for **GeoTech ONE CRM**, open it, and select the plus or **Install** button.
+4. Confirm the blue GeoTech ONE icon appears in the **Installed** row, then start a new Codex task.
 
 For a direct MCP connection without the plugin card or local files:
 

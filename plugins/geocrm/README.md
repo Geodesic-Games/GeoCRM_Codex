@@ -25,13 +25,34 @@ codex mcp list
 
 Use this for the branded Plugins-directory card, starter prompts, and the bundled GeoCRM workflow skill. Codex fetches only this small public marketplace repository; you do not clone the private GeoCRM application.
 
+#### Install with the Codex desktop interface
+
+GeoTech ONE is distributed from a public Git marketplace, so register that marketplace once:
+
+```powershell
+codex plugin marketplace add Geodesic-Games/GeoCRM_Codex
+```
+
+Then complete the installation in Codex desktop:
+
+1. Open **Plugins** and select the refresh icon in the upper-right corner.
+2. Open **Personal**, then select the **GeoTech ONE** marketplace source.
+3. Search for **GeoTech ONE CRM** and open its details.
+4. Select the plus or **Install** button.
+5. Confirm the blue GeoTech ONE icon appears in the **Installed** row.
+6. Start a new Codex task so the plugin skill and MCP tools load.
+
+If the marketplace does not appear, run `codex plugin marketplace list`, confirm `geotech-one` is present, and refresh the Plugins page again.
+
+#### Install entirely from the CLI
+
 ```powershell
 codex plugin marketplace add Geodesic-Games/GeoCRM_Codex
 codex plugin add geocrm@geotech-one
 codex plugin list
 ```
 
-Start a new Codex task after either installation so the MCP tools and skill load cleanly.
+The three commands above are the supported sequence: register the Git marketplace, install `geocrm` from the `geotech-one` marketplace, then verify the installation. Start a new Codex task after either installation method.
 
 ## Prepare GeoCRM access
 
