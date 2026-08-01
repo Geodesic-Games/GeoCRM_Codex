@@ -34,7 +34,7 @@ codex mcp add one `
 codex mcp login one --scopes crm.read,crm.write
 ```
 
-See [the complete plugin guide](plugins/one/README.md) or the [hosted installation guide](https://geotech-crm.web.app/docs/codex-plugin/).
+See [the complete plugin guide](plugins/one/README.md) or the [hosted installation guide](https://one.geotech.one/docs/codex-plugin/).
 
 ## Repository layout
 

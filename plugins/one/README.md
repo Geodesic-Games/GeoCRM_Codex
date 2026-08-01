@@ -54,7 +54,7 @@ The three commands above are the supported sequence: register the Git marketplac
 
 An owner or administrator should:
 
-1. Open [ONE](https://crm.geotech.one/) and choose **Admin menu**.
+1. Open [ONE](https://one.geotech.one/) and choose **Admin menu**.
 2. Open the person's account and select the **ONE workspace** access type.
 3. Assign an existing permission group, or select individual boards and BackOffice sections directly.
 4. Choose **View only** or **Can edit** for every direct assignment.
@@ -118,4 +118,4 @@ Removing the local connection does not change ONE user access. A ONE administrat
 - ONE enforces the signed-in person's live board viewer/editor grants on every tool call.
 - The local stdio MCP remains available only in the private ONE application repository for specialized developer/API-key workflows.
 
-Public installation guide: <https://geotech-crm.web.app/docs/codex-plugin/>
+Public installation guide: <https://one.geotech.one/docs/codex-plugin/>

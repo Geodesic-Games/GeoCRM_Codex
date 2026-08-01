@@ -7,7 +7,7 @@
     "email": "denys.dubinin@geotech.one",
     "url": "https://geotech.one"
   },
-  "homepage": "https://geotech-crm.web.app/docs/codex-plugin/",
+  "homepage": "https://one.geotech.one/docs/codex-plugin/",
   "repository": "https://github.com/Geodesic-Games/ONE_Codex",
   "license": "UNLICENSED",
   "keywords": ["one", "workspace", "boards", "operations", "oauth", "mcp"],
@@ -19,9 +19,9 @@
     "developerName": "GeoTech",
     "category": "Sales",
     "capabilities": ["OAuth", "Read", "Write"],
-    "websiteURL": "https://crm.geotech.one/",
-    "privacyPolicyURL": "https://crm.geotech.one/privacy",
-    "termsOfServiceURL": "https://crm.geotech.one/terms",
+    "websiteURL": "https://one.geotech.one/",
+    "privacyPolicyURL": "https://one.geotech.one/privacy",
+    "termsOfServiceURL": "https://one.geotech.one/terms",
     "defaultPrompt": [
       "List the ONE boards I can access.",
       "Find recent contacts in ONE matching a company name.",
