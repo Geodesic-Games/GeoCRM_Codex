@@ -23,6 +23,18 @@ codex plugin add one@geotech-one
 codex plugin list
 ```
 
+### If Codex reports a different marketplace source
+
+The repository was renamed from `GeoCRM_Codex` to `ONE_Codex`. If Codex already registered the old URL under the stable `geotech-one` marketplace name, remove that local source registration before adding the renamed repository:
+
+```powershell
+codex plugin marketplace remove geotech-one
+codex plugin marketplace add Geodesic-Games/ONE_Codex --ref main
+codex plugin add one@geotech-one
+```
+
+This does not delete ONE data, user access, or server-side OAuth grants. It only replaces the local marketplace source URL. If `geotech-one` already points to `ONE_Codex`, use `codex plugin marketplace upgrade geotech-one` instead.
+
 Installation opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
 
 For a direct MCP connection without the plugin card or local files:

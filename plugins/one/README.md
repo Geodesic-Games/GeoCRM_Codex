@@ -50,6 +50,19 @@ codex plugin list
 
 The three commands above are the supported sequence: register the Git marketplace, install `one` from the `geotech-one` marketplace, then verify the installation. Complete the browser sign-in, restart Codex desktop, and start a new task after either installation method.
 
+#### Fix an old marketplace source
+
+If Codex says marketplace `geotech-one` is already added from a different source, it still has the retired `GeoCRM_Codex` repository URL registered. Replace only that local marketplace registration, then install ONE:
+
+```powershell
+codex plugin marketplace remove geotech-one
+codex plugin marketplace add Geodesic-Games/ONE_Codex --ref main
+codex plugin add one@geotech-one
+codex plugin list
+```
+
+This keeps the stable `one@geotech-one` identity and does not delete ONE workspace data, permissions, or server-side OAuth grants. When the configured source is already `ONE_Codex`, refresh it with `codex plugin marketplace upgrade geotech-one` instead of removing it.
+
 ## Prepare ONE access
 
 An owner or administrator should:
