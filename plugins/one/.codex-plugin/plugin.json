@@ -1,21 +1,21 @@
 {
-  "name": "geocrm",
-  "version": "0.2.2",
-  "description": "Use GeoTech ONE GeoCRM boards from Codex with per-user OAuth and live board permissions.",
+  "name": "one",
+  "version": "0.3.0",
+  "description": "Use ONE boards and operational workspaces from Codex with per-user OAuth and live permissions.",
   "author": {
     "name": "GeoTech",
     "email": "denys.dubinin@geotech.one",
     "url": "https://geotech.one"
   },
   "homepage": "https://geotech-crm.web.app/docs/codex-plugin/",
-  "repository": "https://github.com/Geodesic-Games/GeoCRM_Codex",
+  "repository": "https://github.com/Geodesic-Games/ONE_Codex",
   "license": "UNLICENSED",
-  "keywords": ["crm", "boards", "sales", "oauth", "mcp"],
+  "keywords": ["one", "workspace", "boards", "operations", "oauth", "mcp"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "GeoTech ONE CRM",
-    "shortDescription": "Work with your permitted GeoCRM boards.",
-    "longDescription": "Connect Codex to GeoTech ONE GeoCRM using your Google account. GeoCRM applies live view-only or edit access for every board and every tool call.",
+    "displayName": "ONE",
+    "shortDescription": "Work with your permitted ONE workspaces.",
+    "longDescription": "Connect Codex to ONE using your Google account. ONE applies live view-only or edit access for every board and every tool call.",
     "developerName": "GeoTech",
     "category": "Sales",
     "capabilities": ["OAuth", "Read", "Write"],
@@ -23,9 +23,9 @@
     "privacyPolicyURL": "https://crm.geotech.one/privacy",
     "termsOfServiceURL": "https://crm.geotech.one/terms",
     "defaultPrompt": [
-      "List the GeoCRM boards I can access.",
-      "Find recent contacts matching a company name.",
-      "Create a CRM item after confirming the board and fields."
+      "List the ONE boards I can access.",
+      "Find recent contacts in ONE matching a company name.",
+      "Create an item in ONE after confirming the board and fields."
     ],
     "brandColor": "#287DFF",
     "composerIcon": "./assets/geotech-one.png",

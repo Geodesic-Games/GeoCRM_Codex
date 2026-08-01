@@ -1,11 +1,11 @@
 ---
-name: geocrm
-description: Use when the user wants to inspect, search, create, update, move, comment on, or delete GeoCRM board items through the GeoCRM plugin. The remote MCP server signs in each person with OAuth and enforces that person's current board-level viewer or editor permissions.
+name: one
+description: Use when the user wants to inspect, search, create, update, move, comment on, or delete ONE board items through the ONE plugin. The remote MCP server signs in each person with OAuth and enforces that person's current board-level viewer or editor permissions.
 ---
 
-# GeoCRM
+# ONE
 
-Use the `geocrm` MCP tools for CRM board work.
+Use the `one` MCP tools for ONE workspace and board work.
 
 ## Start with access context
 
@@ -26,10 +26,10 @@ Use the `geocrm` MCP tools for CRM board work.
 - Prefer exact existing column IDs or titles from `get_board`.
 - Preview moves with `dry_run: true` before applying them.
 - For deletion, read the item first and pass its exact current name as `confirm_name`.
-- Report permission errors as access-policy outcomes. Ask a GeoCRM administrator to change the person's group only when broader access is genuinely required.
+- Report permission errors as access-policy outcomes. Ask a ONE administrator to change the person's group only when broader access is genuinely required.
 
 ## Security
 
 - Never request, display, store, or paste an API key for the remote plugin.
-- OAuth tokens are managed by Codex and GeoCRM. Do not place them in prompts, source files, logs, or board fields.
-- A disabled GeoCRM user or removed board grant takes effect on the next tool call, including calls made with an existing token.
+- OAuth tokens are managed by Codex and ONE. Do not place them in prompts, source files, logs, or board fields.
+- A disabled ONE user or removed board grant takes effect on the next tool call, including calls made with an existing token.

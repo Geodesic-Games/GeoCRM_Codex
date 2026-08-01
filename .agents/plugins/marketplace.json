@@ -1,14 +1,14 @@
 {
   "name": "geotech-one",
   "interface": {
-    "displayName": "GeoTech ONE"
+    "displayName": "ONE"
   },
   "plugins": [
     {
-      "name": "geocrm",
+      "name": "one",
       "source": {
         "source": "local",
-        "path": "./plugins/geocrm"
+        "path": "./plugins/one"
       },
       "policy": {
         "installation": "AVAILABLE",
