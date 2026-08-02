@@ -1,6 +1,6 @@
 # ONE for Codex
 
-This public repository distributes the ONE Codex plugin. The ONE server, data, authentication, and permission enforcement remain hosted by GeoTech; this repository contains only the installable plugin manifest, MCP endpoint configuration, workflow skill, documentation, and brand assets.
+This public repository distributes the ONE Codex plugin. The ONE server, data, authentication, and permission enforcement remain hosted by GeoTech; this repository contains only the installable plugin manifest, registered connector mapping, workflow skill, documentation, and brand assets.
 
 ## Install from Codex desktop
 
@@ -12,7 +12,7 @@ No terminal command or repository clone is required:
 4. Enter Git ref `main`.
 5. Leave Sparse paths empty and select **Add marketplace**.
 6. Open **Personal → ONE** and install **ONE**.
-7. Complete the ONE sign-in window that opens during installation.
+7. Select **Connect** on the ONE plugin card and complete the ONE sign-in window.
 8. Restart Codex desktop and start a new task.
 
 Optional CLI equivalent:
@@ -35,7 +35,7 @@ codex plugin add one@geotech-one
 
 This does not delete ONE data, user access, or server-side OAuth grants. It only replaces the local marketplace source URL. If `geotech-one` already points to `ONE_Codex`, use `codex plugin marketplace upgrade geotech-one` instead.
 
-Installation opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
+The ONE plugin card uses a required app connector, so Codex shows the same first-class **Connect** control used by connector-backed plugins such as Gmail. Selecting it opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
 
 For a direct MCP connection without the plugin card or local files:
 
@@ -51,11 +51,14 @@ See [the complete plugin guide](plugins/one/README.md) or the [hosted installati
 ## Repository layout
 
 ```text
-.agents/plugins/marketplace.json   Public Codex marketplace catalog
-plugins/one/.codex-plugin/      Plugin manifest
-plugins/one/.mcp.json           Hosted OAuth MCP connection
-plugins/one/skills/             ONE workflow instructions
-plugins/one/assets/             ONE plugin branding
+.agents/plugins/marketplace.json  Public Codex marketplace catalog
+plugins/one/.codex-plugin/        Plugin manifest
+plugins/one/.app.json             Registered ONE app connector
+plugins/one/skills/               ONE workflow instructions
+plugins/one/assets/               ONE plugin branding
+tests/plugin-contract.test.mjs    Connector packaging regression test
 ```
+
+Run the package contract check with `node tests/plugin-contract.test.mjs`.
 
 The ONE application repository consumes this repository as a Git submodule so the public plugin package remains independently installable and versioned.

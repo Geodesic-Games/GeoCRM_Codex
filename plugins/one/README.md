@@ -37,7 +37,7 @@ No terminal command is required. Register and install the public Git marketplace
 6. Select **Add marketplace**.
 7. If necessary, select refresh, then open **Personal → ONE**.
 8. Open **ONE** and select the plus or **Install** button.
-9. Complete the ONE sign-in window, using the Google account registered in ONE.
+9. Select **Connect** on the ONE plugin card and complete the ONE sign-in window using the Google account registered in ONE.
 10. Confirm its blue icon appears in the **Installed** row, restart Codex desktop, and start a new task.
 
 #### Optional CLI alternative
@@ -80,7 +80,7 @@ Ask Codex:
 
 > List the ONE boards I can access.
 
-Codex opens the ONE authorization page during installation. Sign in with the Google account registered in ONE, review the requested scopes, and choose **Authorize ONE**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the ONE account disabled.
+The ONE plugin card shows a first-class **Connect** control because the plugin declares ONE as a required app connector. Select **Connect**, sign in with the Google account registered in ONE, review the requested scopes, and choose **Authorize ONE**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the ONE account disabled.
 
 ONE checks the user's current account status and board grants on every MCP request. Removing a group, changing it to view-only, removing a board, or disabling the user takes effect without issuing a new plugin credential.
 
