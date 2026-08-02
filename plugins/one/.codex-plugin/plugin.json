@@ -1,6 +1,6 @@
 {
   "name": "one",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Use ONE boards and operational workspaces from Codex with per-user OAuth and live permissions.",
   "author": {
     "name": "GeoTech",

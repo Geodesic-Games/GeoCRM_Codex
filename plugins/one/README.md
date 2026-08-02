@@ -80,7 +80,7 @@ Ask Codex:
 
 > List the ONE boards I can access.
 
-The ONE plugin card shows a first-class **Connect** control because the plugin declares ONE as a required app connector. Select **Connect**, sign in with the Google account registered in ONE, review the requested scopes, and choose **Authorize ONE**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the ONE account disabled.
+The ONE plugin card shows a first-class **Connect** control because the plugin declares ONE's registered app connector. Select **Connect**, sign in with the Google account registered in ONE, review the requested scopes, and choose **Authorize ONE**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the ONE account disabled.
 
 ONE checks the user's current account status and board grants on every MCP request. Removing a group, changing it to view-only, removing a board, or disabling the user takes effect without issuing a new plugin credential.
 
