@@ -35,7 +35,7 @@ codex plugin add one@geotech-one
 
 This does not delete ONE data, user access, or server-side OAuth grants. It only replaces the local marketplace source URL. If `geotech-one` already points to `ONE_Codex`, use `codex plugin marketplace upgrade geotech-one` instead.
 
-The ONE plugin card uses its registered app connector, so Codex shows the same first-class **Connect** control used by connector-backed plugins such as Gmail. Selecting it opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
+The ONE plugin card uses its registered **ONE Connect** app connector, so Codex shows the same first-class **Connect** control used by connector-backed plugins such as Gmail. Selecting it opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
 
 For a direct MCP connection without the plugin card or local files:
 
