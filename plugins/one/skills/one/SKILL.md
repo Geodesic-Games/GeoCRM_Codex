@@ -5,7 +5,7 @@ description: Use when the user wants to inspect, search, create, update, move, c
 
 # ONE
 
-Use the `one` MCP tools for ONE workspace and board work.
+Use the ONE app connector tools for ONE workspace and board work.
 
 ## Start with access context
 

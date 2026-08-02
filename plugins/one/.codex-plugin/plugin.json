@@ -1,6 +1,6 @@
 {
   "name": "one",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Use ONE boards and operational workspaces from Codex with per-user OAuth and live permissions.",
   "author": {
     "name": "GeoTech",
@@ -12,6 +12,7 @@
   "license": "UNLICENSED",
   "keywords": ["one", "workspace", "boards", "operations", "oauth", "mcp"],
   "skills": "./skills/",
+  "apps": "./.app.json",
   "interface": {
     "displayName": "ONE",
     "shortDescription": "Work with your permitted ONE workspaces.",
@@ -31,6 +32,5 @@
     "composerIcon": "./assets/geotech-one.png",
     "logo": "./assets/geotech-one.png",
     "logoDark": "./assets/geotech-one.png"
-  },
-  "mcpServers": "./.mcp.json"
+  }
 }
