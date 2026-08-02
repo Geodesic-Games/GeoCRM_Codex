@@ -1,7 +1,8 @@
 {
   "apps": {
-    "one-connect": {
-      "id": "asdk_app_6a6ee591f94881918c3a963540af007a"
+    "one": {
+      "id": "asdk_app_6a6ee591f94881918c3a963540af007a",
+      "required": true
     }
   }
 }

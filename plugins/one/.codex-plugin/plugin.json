@@ -1,6 +1,6 @@
 {
   "name": "one",
-  "version": "0.4.2",
+  "version": "0.4.2+codex.20260802132423",
   "description": "Use ONE boards and operational workspaces from Codex with per-user OAuth and live permissions.",
   "author": {
     "name": "GeoTech",
@@ -10,7 +10,14 @@
   "homepage": "https://one.geotech.one/docs/codex-plugin/",
   "repository": "https://github.com/Geodesic-Games/ONE_Codex",
   "license": "UNLICENSED",
-  "keywords": ["one", "workspace", "boards", "operations", "oauth", "mcp"],
+  "keywords": [
+    "one",
+    "workspace",
+    "boards",
+    "operations",
+    "oauth",
+    "mcp"
+  ],
   "skills": "./skills/",
   "apps": "./.app.json",
   "interface": {
@@ -19,7 +26,11 @@
     "longDescription": "Connect Codex to ONE using your Google account. ONE applies live view-only or edit access for every board and every tool call.",
     "developerName": "GeoTech",
     "category": "Sales",
-    "capabilities": ["OAuth", "Read", "Write"],
+    "capabilities": [
+      "OAuth",
+      "Read",
+      "Write"
+    ],
     "websiteURL": "https://one.geotech.one/",
     "privacyPolicyURL": "https://one.geotech.one/privacy",
     "termsOfServiceURL": "https://one.geotech.one/terms",

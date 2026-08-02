@@ -80,7 +80,9 @@ Ask Codex:
 
 > List the ONE boards I can access.
 
-The ONE plugin card shows a first-class **Connect** control because the plugin declares the registered **ONE Connect** app connector. Select **Connect**, sign in with the Google account registered in ONE, review the requested scopes, and choose **Authorize ONE**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the ONE account disabled.
+The ONE plugin card shows a first-class **Connect** control because the plugin declares the registered **ONE** app connector as required. Installation should open that authorization flow immediately. Select **Connect**, sign in with the Google account registered in ONE, review the requested scopes, and choose **Authorize ONE**. Codex stores the rotating refresh credential and reuses the connection across app restarts and new tasks. You sign in again only after logging out, removing the plugin, revoking the connection, or having the ONE account disabled.
+
+The connector's user-facing name comes from its registered ChatGPT app record. Keep that connection named **ONE** in [ChatGPT Plugins](https://chatgpt.com/plugins) and refresh it after MCP metadata changes; changing the local `.app.json` alias does not rename an existing developer connection.
 
 ONE checks the user's current account status and board grants on every MCP request. Removing a group, changing it to view-only, removing a board, or disabling the user takes effect without issuing a new plugin credential.
 

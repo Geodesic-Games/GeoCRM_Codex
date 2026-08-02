@@ -16,11 +16,12 @@ const marketplace = await readJson(".agents/plugins/marketplace.json");
 
 assert.equal(manifest.apps, "./.app.json");
 assert.equal("mcpServers" in manifest, false);
-assert.equal(manifest.version, "0.4.2");
+assert.match(manifest.version, /^0\.4\.2\+codex\.\d{14}$/);
 assert.deepEqual(appConfig, {
   apps: {
-    "one-connect": {
+    one: {
       id: "asdk_app_6a6ee591f94881918c3a963540af007a",
+      required: true,
     },
   },
 });

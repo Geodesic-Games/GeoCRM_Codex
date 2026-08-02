@@ -35,7 +35,9 @@ codex plugin add one@geotech-one
 
 This does not delete ONE data, user access, or server-side OAuth grants. It only replaces the local marketplace source URL. If `geotech-one` already points to `ONE_Codex`, use `codex plugin marketplace upgrade geotech-one` instead.
 
-The ONE plugin card uses its registered **ONE Connect** app connector, so Codex shows the same first-class **Connect** control used by connector-backed plugins such as Gmail. Selecting it opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
+The ONE plugin declares its registered **ONE** app connector as a required dependency, so installation starts the same first-class **Connect** flow used by connector-backed plugins such as Gmail. Selecting it opens ONE's OAuth page so each person can sign in with their own authorized Google account. Codex securely stores the rotating refresh credential and reuses the session across restarts and tasks until the person logs out, removes the plugin, or ONE disables the account.
+
+The user-facing connector name is owned by the registered ChatGPT app, not by the alias in `.app.json`. Keep that registered connection named **ONE** in [ChatGPT Plugins](https://chatgpt.com/plugins), and refresh its metadata after deploying MCP changes. A stale developer connection created as **ONE Test** must be renamed there when the interface offers editing, or replaced by a new **ONE** connection and its new `asdk_app_...` ID must be committed here.
 
 For a direct MCP connection without the plugin card or local files:
 
