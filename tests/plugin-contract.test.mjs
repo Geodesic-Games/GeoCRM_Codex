@@ -18,9 +18,8 @@ assert.equal(manifest.apps, "./.app.json");
 assert.equal("mcpServers" in manifest, false);
 assert.deepEqual(appConfig, {
   apps: {
-    one: {
+    "dev-6a6ee591f94881918c3a963540af007a": {
       id: "asdk_app_6a6ee591f94881918c3a963540af007a",
-      required: true,
     },
   },
 });

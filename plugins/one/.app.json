@@ -1,8 +1,7 @@
 {
   "apps": {
-    "one": {
-      "id": "asdk_app_6a6ee591f94881918c3a963540af007a",
-      "required": true
+    "dev-6a6ee591f94881918c3a963540af007a": {
+      "id": "asdk_app_6a6ee591f94881918c3a963540af007a"
     }
   }
 }
