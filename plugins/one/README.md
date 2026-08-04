@@ -1,6 +1,6 @@
 # ONE plugin for Codex
 
-The ONE plugin gives Codex a secure, per-person connection to ONE boards and operational workspaces. It uses the hosted MCP endpoint at `https://geotech-crm.web.app/api/mcp` and signs each user in through ONE's Google/Firebase login. No shared API key, repository checkout, or local server is required.
+The ONE plugin gives Codex a secure, per-person connection to ONE boards and operational workspaces. It uses the hosted MCP endpoint at `https://one.geotech.one/api/mcp` and signs each user in through ONE's Google/Firebase login. No shared API key, repository checkout, or local server is required. The Firebase Hosting endpoint at `https://geotech-crm.web.app/api/mcp` remains a permanent fallback.
 
 ## Choose an installation
 
@@ -8,14 +8,14 @@ The ONE plugin gives Codex a secure, per-person connection to ONE boards and ope
 
 Use this when you need ONE tools in Codex and do not need a Plugins-directory card. No files are downloaded from this repository.
 
-In Codex desktop, open **Settings → MCP servers → Add server**, choose **Streamable HTTP**, enter `ONE` and `https://geotech-crm.web.app/api/mcp`, save, restart, and select **Authenticate**.
+In Codex desktop, open **Settings → MCP servers → Add server**, choose **Streamable HTTP**, enter `ONE` and `https://one.geotech.one/api/mcp`, save, restart, and select **Authenticate**.
 
 Or run:
 
 ```powershell
 codex mcp add one `
-  --url https://geotech-crm.web.app/api/mcp `
-  --oauth-resource https://geotech-crm.web.app/api/mcp
+  --url https://one.geotech.one/api/mcp `
+  --oauth-resource https://one.geotech.one/api/mcp
 
 codex mcp login one --scopes crm.read,crm.write
 codex mcp list
