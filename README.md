@@ -43,8 +43,8 @@ For a direct MCP connection without the plugin card or local files:
 
 ```powershell
 codex mcp add one `
-  --url https://geotech-crm.web.app/api/mcp `
-  --oauth-resource https://geotech-crm.web.app/api/mcp
+  --url https://one.geotech.one/api/mcp `
+  --oauth-resource https://one.geotech.one/api/mcp
 codex mcp login one --scopes crm.read,crm.write
 ```
 
