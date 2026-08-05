@@ -2,6 +2,8 @@
 
 The ONE plugin gives Codex a secure, per-person connection to ONE boards and operational workspaces. It uses the hosted MCP endpoint at `https://one.geotech.one/api/mcp` and signs each user in through ONE's Google/Firebase login. No shared API key, repository checkout, or local server is required. The Firebase Hosting endpoint at `https://geotech-crm.web.app/api/mcp` remains a permanent fallback.
 
+The connector also exposes `get_brand_standards`, the authoritative agent-readable GeoTech brand system. Call it before presentations, Complex Decisions, documents, reports, charts, diagrams, product/UI design, campaigns, or other visual work so approved source artwork, exact colours, Outfit/IBM Plex Sans typography, patterns, contrast, and clear-space rules are applied consistently.
+
 ## Choose an installation
 
 ### Option A — direct MCP connection
@@ -94,6 +96,7 @@ Access levels:
 
 Useful requests:
 
+- `Get the GeoTech brand standards before designing this presentation.`
 - `List my ONE boards and show whether each is view-only or editable.`
 - `Search Contacts for people connected to Acme.`
 - `Show the Deals schema before creating anything.`

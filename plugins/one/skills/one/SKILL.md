@@ -1,11 +1,19 @@
 ---
 name: one
-description: Use when the user wants to inspect, search, create, update, move, comment on, or delete ONE board items through the ONE plugin. The remote MCP server signs in each person with OAuth and enforces that person's current board-level viewer or editor permissions.
+description: Use when the user wants to inspect, search, create, update, move, comment on, or delete ONE board items, retrieve GeoTech brand standards, or prepare presentations, Complex Decisions, documents, diagrams, charts, product design, or other visual work through the ONE plugin. The remote MCP server signs in each person with OAuth and enforces that person's current permissions.
 ---
 
 # ONE
 
 Use the ONE app connector tools for ONE workspace and board work.
+
+## Brand standards
+
+- Before producing or substantially revising a presentation, Complex Decision brief, product or website design, UI, document, report, chart, diagram, campaign, email, social post, or other visual GeoTech work, call `get_brand_standards`.
+- Treat the returned logos, source links, colour values, typography, pattern, contrast, and clear-space rules as authoritative. Do not rely on remembered or copied values.
+- Start from approved artwork or a published template. Never redraw, recolour, crop, stretch, distort, rotate, or rebuild the GeoTech mark or its lockups.
+- Apply `Outfit` to brand/display headings and `IBM Plex Sans` to body text, UI, labels, annotations, and tables unless the returned standard explicitly supersedes that guidance.
+- Review the finished composition at its actual delivery size before sharing or publishing it.
 
 ## Start with access context
 

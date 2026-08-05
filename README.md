@@ -1,6 +1,6 @@
 # ONE for Codex
 
-This public repository distributes the ONE Codex plugin. The ONE server, data, authentication, and permission enforcement remain hosted by GeoTech; this repository contains only the installable plugin manifest, registered connector mapping, workflow skill, documentation, and brand assets.
+This public repository distributes the ONE Codex plugin. The ONE server, data, authentication, and permission enforcement remain hosted by GeoTech; this repository contains only the installable plugin manifest, registered connector mapping, workflow skill, documentation, and plugin assets. Through the hosted connector, `get_brand_standards` exposes the authoritative GeoTech logos, exact palette, typography, patterns, source links, and usage guidance.
 
 ## Install from Codex desktop
 
@@ -49,6 +49,8 @@ codex mcp login one --scopes crm.read,crm.write
 ```
 
 See [the complete plugin guide](plugins/one/README.md) or the [hosted installation guide](https://one.geotech.one/docs/codex-plugin/).
+
+For presentations, Complex Decisions, documents, charts, diagrams, product/UI design, or other visual GeoTech work, ask Codex to call `get_brand_standards` before it starts designing. The plugin skill treats the returned standard as authoritative and prohibits redrawing or transforming the mark.
 
 ## Repository layout
 

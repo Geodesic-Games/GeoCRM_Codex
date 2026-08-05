@@ -13,6 +13,7 @@ const readJson = async (relativePath) =>
 const manifest = await readJson("plugins/one/.codex-plugin/plugin.json");
 const appConfig = await readJson("plugins/one/.app.json");
 const marketplace = await readJson(".agents/plugins/marketplace.json");
+const skill = await readFile(path.join(pluginRoot, "skills", "one", "SKILL.md"), "utf8");
 
 assert.equal(manifest.apps, "./.app.json");
 assert.equal("mcpServers" in manifest, false);
@@ -29,6 +30,9 @@ assert.deepEqual(appConfig, {
 const oneMarketplaceEntry = marketplace.plugins.find((plugin) => plugin.name === "one");
 assert.ok(oneMarketplaceEntry, "ONE must remain listed in the marketplace");
 assert.equal(oneMarketplaceEntry.policy?.authentication, "ON_INSTALL");
+assert.match(skill, /call `get_brand_standards`/);
+assert.match(skill, /presentation, Complex Decision brief/);
+assert.match(manifest.interface.capabilities.join("\n"), /Brand standards/);
 
 await assert.rejects(
   access(path.join(pluginRoot, ".mcp.json"), fsConstants.F_OK),
