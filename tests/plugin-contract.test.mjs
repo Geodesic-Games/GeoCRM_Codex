@@ -32,6 +32,9 @@ assert.ok(oneMarketplaceEntry, "ONE must remain listed in the marketplace");
 assert.equal(oneMarketplaceEntry.policy?.authentication, "ON_INSTALL");
 assert.match(skill, /call `get_brand_standards`/);
 assert.match(skill, /presentation, Complex Decision brief/);
+assert.match(skill, /ONE\/Firebase-hosted asset URLs/);
+assert.equal(skill.includes("drive.google"), false);
+assert.equal(skill.includes("docs.google"), false);
 assert.match(manifest.interface.capabilities.join("\n"), /Brand standards/);
 
 await assert.rejects(

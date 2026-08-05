@@ -10,7 +10,8 @@ Use the ONE app connector tools for ONE workspace and board work.
 ## Brand standards
 
 - Before producing or substantially revising a presentation, Complex Decision brief, product or website design, UI, document, report, chart, diagram, campaign, email, social post, or other visual GeoTech work, call `get_brand_standards`.
-- Treat the returned logos, source links, colour values, typography, pattern, contrast, and clear-space rules as authoritative. Do not rely on remembered or copied values.
+- Treat the returned logos, colour values, typography, pattern, contrast, and clear-space rules as authoritative. Do not rely on remembered or copied values.
+- Use only the ONE/Firebase-hosted asset URLs returned by the standard. Never substitute or expose Google Drive, Google Docs, or other third-party source links for brand files.
 - Start from approved artwork or a published template. Never redraw, recolour, crop, stretch, distort, rotate, or rebuild the GeoTech mark or its lockups.
 - Apply `Outfit` to brand/display headings and `IBM Plex Sans` to body text, UI, labels, annotations, and tables unless the returned standard explicitly supersedes that guidance.
 - Review the finished composition at its actual delivery size before sharing or publishing it.
